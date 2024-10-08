@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UiPath RPA Innovators</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+        </style>
+        <link rel="stylesheet" href="css/indstyle.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo-link">  <!-- Anchor tag wrapping logo and text -->
+                <div class="logo">
+                    <img src="img/LogoNew.jpg" alt="UiPath Innovators Logo">
+                </div>
+                <div class="logotext">
+                    <h2>UiPath RPA Innovators</h2>
+                    <p>KLS GIT</p>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="bods.html">BoDs</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <!--<li><a href="join_us.html">JOIN US</a></li>-->
+                    <li><a href="contact_us.html">CONTACT US</a></li>
+                    <!-- Add the logo after Contact Us -->
+                    <li>
+                        <a href="https://git.edu/" target="_blank">
+                            <img src="img/GITLogo.png" alt="Logo">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </header>
+        
+
+        <section class="hero-section">
+            <div class="content">
+                <h1 id="typing-effect" class="typing"></h1>
+                <p>Empowering students with cutting-edge RPA tools.</p>
+                <a target="_blank" href="https://forms.gle/krSw7m8m9JP5WPaMA" class="join-btn">JOIN THE CLUB</a>
+            </div>
+        </section>
+        
+        
+
+        <!-- Side-by-side illustration and about-section -->
+        <section class="illustration-about">
+            <div class="illustration">
+                <img src="img/hand-drawn-flat-design-rpa-illustration.png" alt="Illustration">
+            </div>
+            <div class="about-section">
+                <p>The UiPath RPA Innovators Club at KLS Gogte Institute of Technology is a hub for students passionate about Robotic Process Automation (RPA).</p>
+                <p>Established in August 2024, our mission is to foster innovation through UiPath's cutting-edge automation tools. As part of the UiPath Academic Alliance since 2020, we provide our members with exclusive access to industry-leading resources and certifications.</p>
+                <p>Our club focuses on enhancing technical skills and solving real-world automation challenges. We host workshops, hackathons, and collaborative projects, empowering students to stay at the forefront of digital transformation.</p>
+                <p>Join us to explore, innovate, and shape the future of automation!</p>
+            </div>
+        </section>
+        <script>
+            const text = "Innovate, Automate, Lead";
+            const typingElement = document.getElementById("typing-effect");
+            let index = 0;
+            const typingSpeed = 100; // Speed of typing
+            const displayDuration = 2000; // Time to display text after typing
+            const disappearDuration = 300; // Time for the text to disappear (reduced)
+        
+            function type() {
+                if (index < text.length) {
+                    typingElement.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(type, typingSpeed);
+                } else {
+                    // After typing is done, wait for a bit before disappearing
+                    typingElement.style.borderRight = 'none'; // Hide the cursor
+                    setTimeout(() => {
+                        typingElement.style.opacity = 0; // Start disappearing
+                        setTimeout(() => {
+                            typingElement.style.opacity = 1; // Make it visible again
+                            typingElement.textContent = ""; // Clear the text
+                            index = 0; // Reset index to start typing again
+                            typingElement.style.borderRight = '2px solid white'; // Show cursor again
+                            type(); // Start typing again
+                        }, 200); // Short duration before restarting (you can adjust this)
+                    }, displayDuration); // Duration to display the full text
+                }
+            }
+        
+            typingElement.style.borderRight = '2px solid white'; // Show cursor at the beginning
+            type(); // Start the typing effect
+        </script>
+        
+        
+        
+        
+        
+        
+        <footer>
+            <p>&copy; 2024 UiPath RPA Innovators Club KLS GIT</p>
+        </footer>
+    </body>
+</html>

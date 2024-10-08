@@ -1,0 +1,176 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(0deg, #FEB19C, #FA4717);
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+header .logo {
+    margin-right: 15px;
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80px;
+}
+
+.logotext h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logotext p {
+    font-size: 16px;
+    font-weight: bolder;
+    margin: -10px 0 0 2px;
+}
+
+nav {
+    margin-left: auto; /* Pushes the nav to the right */
+    font-size: 12px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center; /* Aligns nav items vertically */
+}
+
+nav ul li {
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li img {
+    height: 100%; /* Matches the height of the nav bar */
+    max-height: 50px; /* Set max height to avoid oversized images */
+    width: auto; /* Adjust width automatically to maintain aspect ratio */
+}
+
+/* BoDs Section Styling */
+.bods-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.center-text {
+    font-size: 48px;
+}
+
+.bods-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* BoD card styling */
+.bod-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    flex: 1;
+    transition: transform 0.3s;
+}
+
+.bod-card:hover {
+    transform: translateY(-5px);
+}
+
+.bod-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.bod-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bod-card p {
+    font-size: 18px;
+}
+
+/* Row Layouts */
+.bod-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bod-row {
+    margin-bottom: 40px; /* Adjust the bottom margin for spacing between rows */
+}
+
+
+.faculty-card {
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #FA4717; /* UiPath orange */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Padding around the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remove margin around the paragraph */
+    font-size: 14px; /* Set a smaller font size */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bod-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bod-card {
+        width: 100%;
+    }
+
+    .bods-section {
+        padding: 20px;
+    }
+}

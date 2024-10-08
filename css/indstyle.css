@@ -1,0 +1,214 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(0deg, #FEB19C, #FA4717); /* Orange gradient background */
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep the text color the same */
+}
+
+
+header .logo {
+    margin-right: 15px; /* Space between logo image and text */
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logotext {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: flex-start; /* Align to the top */
+    height: 80px;
+}
+
+.logotext h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+}
+
+.logotext p {
+    font-size: 16px;
+    font-weight: bolder;
+    margin: -10px 0 0 2px; /* Adjust margin: top, right, bottom, left */
+    text-align: left; /* Left justify KLS GIT */
+    padding: 0; /* Remove padding */
+}
+
+
+nav {
+    margin-left: auto; /* Pushes the nav to the right */
+    font-size: 12px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center; /* Aligns nav items vertically */
+}
+
+nav ul li {
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li img {
+    height: 100%; /* Matches the height of the nav bar */
+    max-height: 50px; /* Set max height to avoid oversized images */
+    width: auto; /* Adjust width automatically to maintain aspect ratio */
+}
+
+
+.typing {
+    border-right: 2px solid white; /* Cursor effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide the overflow */
+    display: inline-block; /* Ensure it can expand to fit content */
+}
+
+
+.cursor {
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* Center the hero section content */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.hero-section .content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.hero-section .content p {
+    font-size: 32px;
+    margin: -25px 0 10px 0;
+    font-weight: medium;
+}
+
+.hero-section .join-btn {
+    display: inline-block;
+    background-color: #FF4800;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-section .join-btn:hover {
+    background-color: #e04400;
+}
+
+/* Side-by-side illustration and about-section */
+.illustration-about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.illustration {
+    margin-right: 5px;
+}
+
+.illustration img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.about-section {
+    font-family: "Inter", sans-serif;
+    flex: 1;
+    max-width: 510px;
+    text-align: left;
+}
+
+.about-section p {
+    margin: 20px 0;
+    font-weight: semi-bold;
+}
+
+footer {
+    background-color: #FA4717; /* UiPath orange */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Padding around the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remove margin around the paragraph */
+    font-size: 14px; /* Set a smaller font size */
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+
+    .illustration-about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .illustration img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-section {
+        max-width: 300px;
+        margin-top: 30px;
+    }
+}

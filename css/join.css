@@ -1,0 +1,124 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(0deg, #FEB19C, #FA4717); /* Orange gradient background */
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep the text color the same */
+}
+
+
+header .logo {
+    margin-right: 15px; /* Space between logo image and text */
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logotext {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: flex-start; /* Align to the top */
+    height: 80px;
+}
+
+.logotext h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+}
+
+.logotext p {
+    font-size: 16px;
+    font-weight: bolder;
+    margin: -10px 0 0 2px; /* Adjust margin: top, right, bottom, left */
+    text-align: left; /* Left justify KLS GIT */
+    padding: 0; /* Remove padding */
+}
+
+
+nav {
+    margin-left: auto; /* Pushes the nav to the right */
+    font-size: 12px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Coming Soon Section */
+.coming-soon-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Takes up most of the viewport height */
+}
+
+.center-text h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+footer {
+    background-color: #FA4717; /* UiPath orange */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Padding around the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remove margin around the paragraph */
+    font-size: 14px; /* Set a smaller font size */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logotext h2 {
+        font-size: 28px;
+    }
+    
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .center-text h1 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,164 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(0deg, #FEB19C, #FA4717); /* Orange gradient background */
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep the text color the same */
+}
+
+
+header .logo {
+    margin-right: 15px; /* Space between logo image and text */
+}
+
+header .logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logotext {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: flex-start; /* Align to the top */
+    height: 80px;
+}
+
+.logotext h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+}
+
+.logotext p {
+    font-size: 16px;
+    font-weight: bolder;
+    margin: -10px 0 0 2px; /* Adjust margin: top, right, bottom, left */
+    text-align: left; /* Left justify KLS GIT */
+    padding: 0; /* Remove padding */
+}
+
+
+nav {
+    margin-left: auto; /* Pushes the nav to the right */
+    font-size: 12px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center; /* Aligns nav items vertically */
+}
+
+nav ul li {
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li img {
+    height: 100%; /* Matches the height of the nav bar */
+    max-height: 50px; /* Set max height to avoid oversized images */
+    width: auto; /* Adjust width automatically to maintain aspect ratio */
+}
+
+/* About Us Section */
+.about-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.about-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 50px; /* Space between image and text */
+}
+
+.about-text {
+    flex: 1;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #FA4717; /* UiPath orange */
+    color: white; /* White text for contrast */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Padding around the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remove margin around the paragraph */
+    font-size: 14px; /* Set a smaller font size */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 300px;
+        margin: 0 auto 20px; /* Adjust spacing for small screens */
+    }
+
+    .about-text h1 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+}
